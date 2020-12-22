@@ -1,2 +1,3 @@
-# 4DWireDraw
-4次元での四目並べ
+# Four-Dimensional Renju
+
+4 次元での四目並べ
