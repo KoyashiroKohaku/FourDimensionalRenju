@@ -28,13 +28,13 @@ namespace FourDimensionalRenju.Core
                 throw new ArgumentOutOfRangeException();
             }
 
-            if (y <= Z_COUNT)
+            if (z >= Z_COUNT)
             {
                 // TODO: Error message
                 throw new ArgumentOutOfRangeException();
             }
 
-            if (s <= S_COUNT)
+            if (s >= S_COUNT)
             {
                 // TODO: Error message
                 throw new ArgumentOutOfRangeException();
