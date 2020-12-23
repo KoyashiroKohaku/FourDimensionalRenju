@@ -1,3 +1,4 @@
+using System;
 using FourDimensionalRenju.Core;
 using Xunit;
 
@@ -8,6 +9,26 @@ namespace FourDimensionalRenju.Core.Test
         [Fact]
         public void Constructor_Test()
         {
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+            {
+                new Point(7, 0, 0, 0);
+            });
+
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+            {
+                new Point(0, 7, 0, 0);
+            });
+
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+            {
+                new Point(0, 0, 7, 0);
+            });
+
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+            {
+                new Point(0, 0, 0, 7);
+            });
+
             for (byte x = 0; x < Point.X_COUNT; x++)
             {
                 for (byte y = 0; y < Point.Y_COUNT; y++)
